@@ -1,0 +1,47 @@
+/* Ask Maya – reusable pieces for Direction E. Requires tokens.css */
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+.section { padding: var(--section-y) 0; }
+
+/* Buttons: coral fill + NAVY text (white on coral fails contrast) */
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 50px;
+  padding: 0 28px; border-radius: var(--radius-btn); font-weight: 700; text-decoration: none; }
+.btn-primary { background: var(--coral); color: var(--navy); }
+.btn-primary:hover { filter: brightness(0.95); }
+.btn-outline { border: 2px solid var(--navy); color: var(--navy); background: transparent; }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+
+/* Condensed all-caps label (top strip, service band, tags) */
+.label { font-family: var(--font-label); letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* Signature shape: hexagon photo frame. Put <img> inside, object-fit: cover */
+.hex { clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  overflow: hidden; background: var(--bg-tint); }
+.hex > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hex-teal { background: var(--teal); } .hex-navy { background: var(--navy); } .hex-peach { background: var(--peach); }
+
+/* Hero hex cluster (desktop). Below 900px: stack as a single row, no overlap */
+.hex-cluster { position: relative; height: 480px; }
+.hex-cluster .h1 { position: absolute; left: 0; top: 0; width: 300px; height: 346px; }
+.hex-cluster .h2 { position: absolute; right: 0; top: 40px; width: 240px; height: 277px; }
+.hex-cluster .h3 { position: absolute; left: 150px; bottom: 0; width: 230px; height: 265px; }
+@media (max-width: 900px) {
+  .hex-cluster { height: auto; display: flex; gap: 12px; justify-content: center; }
+  .hex-cluster > * { position: static !important; width: 30% !important; height: auto !important; aspect-ratio: 1 / 1.155; }
+}
+
+/* Cards */
+.card { background: var(--surface); border-radius: var(--radius-card); padding: 28px;
+  border-top: 6px solid var(--teal); box-shadow: var(--shadow-card); transition: transform .2s; }
+.card:hover { transform: translateY(-4px); }
+.price { font-weight: 700; color: var(--teal-ink); }
+
+/* Dark bands */
+.band-navy { background: var(--navy); color: var(--on-dark); }
+.band-teal { background: var(--teal); color: var(--on-dark); }
+.panel-cta { background: var(--teal); color: #fff; border-radius: var(--radius-panel);
+  padding: 64px 32px; text-align: center; }
+
+/* Grids (3x2 services & gallery: never leave orphans) */
+.grid-3 { display: grid; gap: 24px; grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .grid-3 { grid-template-columns: 1fr; } }

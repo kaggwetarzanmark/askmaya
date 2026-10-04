@@ -1,0 +1,38 @@
+/* Ask Maya – design tokens (Direction E: Hexagon). Import once in app/globals.css */
+:root {
+  /* Brand */
+  --navy: #062640;        /* headlines, dark bands, footer */
+  --teal: #1f7591;        /* logo teal: primary brand, large text, panels */
+  --teal-ink: #145a72;    /* teal for SMALL text on light bg (passes 4.5:1) */
+  --coral: #ff7a59;       /* ALL primary buttons. Text on it is always navy */
+  --peach: #ffc9b8;       /* soft highlight, tags, hexagon fill */
+  --sky: #3db5f0;         /* rare accent from social posts: waves, focus ring */
+
+  /* Surfaces & text */
+  --bg: #eef6f8;          /* page background */
+  --bg-tint: #bfdde6;     /* hexagon/placeholder fill, soft panels */
+  --surface: #ffffff;     /* cards */
+  --text: #062640;
+  --text-muted: #3d5568;
+  --on-dark: #ffffff;
+  --on-dark-muted: #d3e2ec;
+  --line: #d5e6ec;
+
+  /* Type */
+  --font-display: var(--font-bricolage), 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: var(--font-figtree), 'Figtree', system-ui, sans-serif;
+  --font-label: var(--font-anton), 'Anton', Impact, sans-serif; /* all-caps labels only */
+
+  /* Shape & space */
+  --radius-btn: 8px;
+  --radius-card: 16px;
+  --radius-panel: 24px;
+  --container: 1200px;
+  --gutter: 32px;
+  --section-y: 88px;
+  --shadow-card: 0 2px 0 rgba(6, 38, 64, 0.06);
+}
+
+body { background: var(--bg); color: var(--text); font-family: var(--font-body); }
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.02em; margin: 0; }
+:focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; }
