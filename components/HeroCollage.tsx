@@ -5,10 +5,8 @@ export default function HeroCollage() {
   const [show, setShow] = useState(false)
 
   useEffect(() => {
-    const check = () => setShow(window.innerWidth > 900)
+    const check = () => setShow(true)
     check()
-    window.addEventListener('resize', check)
-    return () => window.removeEventListener('resize', check)
   }, [])
 
   if (!show) return null
