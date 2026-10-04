@@ -170,15 +170,14 @@ export default function Navbar() {
                         href={`/services/${item.id}`}
                         onClick={closeAll}
                         style={{
-                          display: 'block',
+                          display: 'flex',
+                          alignItems: 'center',
                           padding: '10px 8px',
                           fontSize: 15,
                           fontWeight: 500,
                           color: 'var(--navy)',
                           fontFamily: 'var(--font-body)',
                           minHeight: 44,
-                          display: 'flex',
-                          alignItems: 'center',
                         }}
                       >
                         {item.name}
