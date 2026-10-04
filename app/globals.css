@@ -698,73 +698,7 @@ a:hover { color: var(--navy); }
 @media (max-width: 600px) { .pricing-4 { grid-template-columns: 1fr; } }
 /* Hero photo collage responsive */
 @media (max-width: 900px) {
-  .hero-collage {
-    width: 100%;
-    height: 400px;
-    max-width: 480px;
-    margin: 0 auto;
-    transform: none;
-    transform-origin: unset;
-  }
-
-  /* Two smaller cards side by side on top row */
-  .hero-collage .collage-card-1 {
-    left: 0 !important;
-    top: 0 !important;
-    transform: rotate(-5deg) !important;
-    width: 170px !important;
-    height: 200px !important;
-  }
-  .hero-collage .collage-card-1 > div {
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  .hero-collage .collage-card-2 {
-    right: 0 !important;
-    left: auto !important;
-    top: 30px !important;
-    transform: rotate(4deg) !important;
-    width: 160px !important;
-    height: 185px !important;
-  }
-  .hero-collage .collage-card-2 > div {
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  /* One wide card on bottom row */
-  .hero-collage .collage-card-3 {
-    left: 0 !important;
-    right: auto !important;
-    top: 220px !important;
-    transform: translateX(0) rotate(-2deg) !important;
-    width: 200px !important;
-    height: 150px !important;
-  }
-  .hero-collage .collage-card-3 > div {
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  /* Badge — overlaps bottom-right corner of card 3 */
-  .hero-collage .collage-badge {
-    right: auto !important;
-    left: 140px !important;    /* card 3 is 200px wide, badge overlaps its right edge */
-    bottom: auto !important;
-    top: 320px !important;     /* card 3 top 220px + ~100px down = corner overlap */
-    width: 110px !important;
-    height: 110px !important;
-    font-size: 13px !important;
-    transform: rotate(12deg) !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-collage {
-    height: 360px;
-    max-width: 100%;
-  }
+  .hero-collage { display: none; }
 }
 
 /* ── Instagram feed grid ─────────────────────────────────── */
