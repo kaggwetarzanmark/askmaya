@@ -55,7 +55,7 @@ export default function PricingPage() {
       <section className="section" style={{ background: 'var(--surface)' }}>
         <div className="container">
           <span className="label-tag" style={{ marginBottom: 24 }}>Residential services</span>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 24 }}>
+          <div className="pricing-4">
             {residential.map((plan) => (
               <div key={plan.name} style={{ background: 'var(--surface)', borderRadius: 'var(--radius-card)', borderTop: '5px solid var(--teal)', padding: 28, boxShadow: 'var(--shadow-card)', display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ fontSize: 18 }}>{plan.name}</h3>
