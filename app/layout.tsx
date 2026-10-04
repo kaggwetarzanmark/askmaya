@@ -32,6 +32,11 @@ export const metadata: Metadata = {
   description:
     'Ask Maya UGA Cleaning delivers top-rated residential, commercial, and car detailing services across Kampala. Vetted cleaners, supplies included, re-clean guarantee.',
   keywords: ['cleaning services Kampala', 'house cleaning Uganda', 'office cleaning Kampala', 'car detailing Ntinda', 'Ask Maya cleaning'],
+  icons: {
+    icon: '/logo.jpg',
+    shortcut: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_UG',
