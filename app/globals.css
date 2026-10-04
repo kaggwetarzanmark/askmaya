@@ -241,6 +241,7 @@ a:hover { color: var(--navy); }
 @media (max-width: 900px) {
   .hero { min-height: calc(100vh - 100px); align-items: flex-start; }
   .hero-inner { grid-template-columns: 1fr; gap: 0; padding: 40px var(--gutter); }
+  .hero-collage { display: none; }
 }
 @media (max-width: 600px) {
   .hero { min-height: calc(100vh - 96px); }
@@ -700,7 +701,6 @@ a:hover { color: var(--navy); }
 @media (max-width: 900px) {
   .hero-collage { display: none; }
 }
-
 /* ── Instagram feed grid ─────────────────────────────────── */
 .ig-grid {
   display: grid;
